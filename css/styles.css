@@ -59,9 +59,33 @@ h1 span {
 
 .output .player-result,
 .output .com-result {
+    text-align: center;
     flex-basis: 50%;
 }
 
-.output .result {
-    flex-basis: 100%;
+#player-num,
+#com-num {
+    display: block;
+    font-size: 90px;
+    font-weight: 900;
+    color:#0cd977;
+}
+
+#result {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#message {
+    padding-top: 20px;
+}
+
+.result {
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ff6f6f;
+    color: #fff;
+    text-align: center;
 }
