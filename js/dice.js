@@ -13,11 +13,11 @@ document.getElementById('user').innerHTML = user;
 // Definizione variabili giocatore e COM
 
 // 1. Giocatore
-var risultatoP1 = Math.round( Math.random() * 6 );
+var risultatoP1 = Math.round( Math.random() * 5 ) + 1;
 document.getElementById('player-num').innerHTML = risultatoP1;
 
 // 2. COM
-var risultatoCOM = Math.round( Math.random() * 6 );
+var risultatoCOM = Math.round( Math.random() * 5 ) + 1;
 document.getElementById('com-num').innerHTML = risultatoCOM;
 
 
