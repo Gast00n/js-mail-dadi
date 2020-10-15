@@ -5,33 +5,31 @@
  */
 
 
- var usernames = ['pippo@boolean.com' , 'topolino@boolean.com' , 'minnie@boolean.com' , 'paperino@boolean.com' , 'pluto@boolean.com' , ];
- var user = prompt('Inserire email utente!').toLowerCase();
+ var usernames = ['pippo@boolean.com', 'topolino@boolean.com', 'minnie@boolean.com', 'paperino@boolean.com', 'pluto@boolean.com'];
+ var user = prompt('Inserire email utente!');
 
- var nutenti = usernames.lenght;   
+//  Mettere tutto minuscolo
 
- for (var i = 0; i < nutenti ; i++) {
+user = user.toLowerCase();
 
-    console.log(i);
-    console.log(usernames);
-    console.log(user);
-    console.log(nutenti);
-    
+// Setto le variabili utili al controllo
+ var nutenti = usernames.length;
+ var userFound = false;  
 
-    // if (user === usernames[i]) {
-    //     console.log(i);
-        
-    //     var risultato = 1;
-    // } else {
-    //     var risultato = 0;
-    // }
+
+
+
+// Inizio ciclo FOR
+ for (var i = 0; i < nutenti; i++) {
+   var uatt = usernames[i];
+   if (user == uatt) {
+      userFound = true;
+    } 
 
  }
- 
 
-//  if (risultato == 1) {
-//     document.getElementById('user').innerHTML = 'Utente Registrato!';
-//  } else {
-//     var user = prompt('Utente non riconosciuto, nuovamente Email di registrazione!').toLowerCase;
-//  }
- 
+ if (userFound == true) {
+    document.getElementById('user').innerHTML = 'Utente Registrato!';
+ } else {
+    user = prompt('Utente non riconosciuto, inserire nuovamente Email di registrazione!');
+}
