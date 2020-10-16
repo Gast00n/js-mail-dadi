@@ -32,4 +32,5 @@ user = user.toLowerCase();
     document.getElementById('user').innerHTML = 'Utente Registrato!';
  } else {
     user = prompt('Utente non riconosciuto, inserire nuovamente Email di registrazione!');
+    document.getElementById('user').innerHTML = 'Utente Registrato!';   
 }
